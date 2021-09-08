@@ -18,6 +18,7 @@ const PokeReducer = (state = InitialState, action) => {
     case ActionTypes.FetchPokeSuccess:
       return {
         ...state,
+        items: action.payload,
         loading: false,
         error: '',
       };
