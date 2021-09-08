@@ -10,7 +10,7 @@ const FetchPokeData = () => async (dispatch) => {
     const response = await axios.get('https://pokeapi.co/api/v2/pokemon/ ');
     dispatch({
       type: ActionTypes.FetchPokeSuccess,
-      payload: response.data,
+      payload: response.data.results,
     });
   } catch (error) {
     dispatch({
