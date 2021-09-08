@@ -1,7 +1,7 @@
 const InitialState = {
-    items: [],
-    loading: false,
-    error: '',
+  items: [],
+  loading: false,
+  error: '',
 };
 
 export default InitialState;
