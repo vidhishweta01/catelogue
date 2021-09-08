@@ -1,4 +1,4 @@
-const ActionTypes = () => {
+const ActionTypes = {
   FetchPokeLoading: 'FetchPokeLoading',
   FetchPokeSuccess: 'FetchPokeSuccess',
   FetchPokeFailure: 'FetchPokeFailure', 

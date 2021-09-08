@@ -1,6 +1,6 @@
 import InitialState from "../store/initialState";
 
-const PokeReducer = (state = initialState, action) {
+const PokeReducer = (state = InitialState, action) => {
   switch(action.type )
   {
       case ActionTypes.FetchPokeLoading:
