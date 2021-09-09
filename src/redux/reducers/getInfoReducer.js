@@ -1,4 +1,4 @@
-import ActionTypes from '../actions/ActionTypes';
+import ActionTypes from '../action/actionTypes';
 
 const initialState = {
   data: {},
@@ -9,6 +9,7 @@ const initialState = {
 const getInfoReducer = (state = initialState, action) => {
   const key = action.pokemonName;
   const info = {};
+  info[key] = action.payload;
   switch (action.type) {
     case ActionTypes.FetchPokeInfoLoading:
       return {
