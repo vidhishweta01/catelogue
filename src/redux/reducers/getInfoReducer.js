@@ -7,6 +7,8 @@ const initialState = {
 };
 
 const getInfoReducer = (state = initialState, action) => {
+  const key = action.pokemonName;
+  const info = {};
   switch (action.type) {
     case ActionTypes.FetchPokeInfoLoading:
       return {
