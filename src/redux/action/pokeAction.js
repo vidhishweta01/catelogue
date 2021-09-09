@@ -20,4 +20,24 @@ const FetchPokeData = () => async (dispatch) => {
   }
 };
 
-export default FetchPokeData;
+const FetchPokeInfo = (id, name) => async (dispatch) => {
+  dispatch({
+    type: ActionTypes.FETCH_POKE_LOADING,
+  });
+
+  try {
+    const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    dispatch({
+      type: ActionTypes.FETCH_POKE_INFO_SUCCESS,
+      payload: response.data,
+      pokemonName: name,
+    });
+  } catch (error) {
+    dispatch({
+      type: ActionTypes.FETCH_POKE_FAILURE,
+      error,
+    });
+  }
+};
+
+export { FetchPokeData, FetchPokeInfo } ;

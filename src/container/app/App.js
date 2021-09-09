@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={pokeList} exact />
-        <Route path="/pokemon/:pokemon" component={poke} />
+        <Route path="/pokemon/:pokemon/:id" component={PokeInfo} />
       </Switch>
     </div>
   );
