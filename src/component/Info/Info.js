@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import propTypes from 'prop-types';
+import styles from './Info.module.css';
 
 const Info = ({ pokemon }) => {
   const {
@@ -11,37 +12,40 @@ const Info = ({ pokemon }) => {
     back_default, back_shiny, front_default, front_shiny,
   } = sprites;
   return (
-    <>
-      <div>
+    <section className={styles.info}>
+      <div className={styles.imgContainer}>
         <img src={back_default} alt={name} />
         <img src={back_shiny} alt={name} />
         <img src={front_default} alt={name} />
         <img src={front_shiny} alt={name} />
       </div>
-      <div>
-        <h3>{`name: ${name}`}</h3>
-        <p>{`height: ${height}`}</p>
-        <p>{`weight: ${weight}`}</p>
-        <p>{`base_experience: ${base_experience}`}</p>
+      <div className={styles.basicInfo}>
+        <h3 className={styles.headers}>BasicInfo: </h3>
+        <ol type="I" className={styles.ul}>
+          <li className={styles.li}>{`name: ${name}`}</li>
+          <li className={styles.li}>{`height: ${height}`}</li>
+          <li className={styles.li}>{`weight: ${weight}`}</li>
+          <li className={styles.li}>{`base_experience: ${base_experience}`}</li>
+        </ol>
       </div>
-      <div>
-        <h3>abilites: </h3>
-        <div>
+      <div className={styles.ability}>
+        <h3 className={styles.headers}>Abilites: </h3>
+        <ol type="I" className={styles.ul}>
           {
-          abilities.map((el) => <span key={name}>{el.ability.name}</span>)
+          abilities.map((el) => <li className={styles.li} key={name}>{el.ability.name}</li>)
           }
-        </div>
+        </ol>
       </div>
 
-      <div>
-        <h3>moves: </h3>
-        <ul>
+      <div className={styles.moves}>
+        <h3 className={styles.headers}>Moves: </h3>
+        <ol type="I" className={styles.ul}>
           {
-            moves.map((el) => <li key={name}>{el.move.name}</li>)
+            moves.map((el) => <li className={styles.li} key={name}>{el.move.name}</li>)
           }
-        </ul>
+        </ol>
       </div>
-    </>
+    </section>
   );
 };
 
