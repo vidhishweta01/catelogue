@@ -52,7 +52,7 @@ const Info = ({ pokemon }) => {
 Info.propTypes = {
   pokemon: propTypes.shape({
     name: propTypes.string.isRequired,
-    height: propTypes.string.isRequired,
+    height: propTypes.number.isRequired,
     weight: propTypes.string.isRequired,
     base_experience: propTypes.string.isRequired,
     sprites: propTypes.shape({

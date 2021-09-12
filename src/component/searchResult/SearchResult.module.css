@@ -1,7 +1,3 @@
-.Poke {
-  margin: 0;
-}
-
 .card {
   width: 80vw;
   height: 10vh;
@@ -51,7 +47,7 @@
 
 .img:hover {
   transition: 2s;
-  content: url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png');
+  content: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png");
   max-width: 20vw;
   max-height: 10vh;
   padding-right: 2vw;
