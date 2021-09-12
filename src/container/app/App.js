@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import pokeList from '../pokelist';
-import Search from '../../component/search/search';
+import Search from '../../component/search';
 import PokeInfo from '../../component/pokeInfo';
 import Navbar from '../../component/Navbar';
 

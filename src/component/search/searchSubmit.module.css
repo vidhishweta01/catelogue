@@ -1,5 +1,5 @@
 .app {
-  margin-top: 30vh;
+  align-items: center;
 }
 
 .input {
@@ -9,8 +9,12 @@
   margin: 1vw;
   border-color: transparent;
   border-radius: 5px;
-  box-shadow: rgb(230, 227, 227) 4px 4px 4px;
   background-color: rgb(250, 240, 223);
+}
+
+.input:hover {
+  border-color: transparent;
+  box-shadow: rgb(156, 177, 182) 4px 4px 4px;
 }
 
 .button {
@@ -22,4 +26,13 @@
   border-radius: 5px;
   color: white;
   background-color: turquoise;
+}
+
+.button:hover {
+  box-shadow: rgb(230, 227, 227) 4px 4px 4px;
+}
+
+.error {
+  display: none;
+  color: white;
 }
