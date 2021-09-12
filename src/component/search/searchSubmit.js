@@ -2,19 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import SearchResult from '../searchResult/searchResult';
+import styles from './searchSubmit.module.css';
 
 const SearchForm = (Pokemon) => {
   const textInput = React.createRef();
   const { array } = Pokemon;
   const onOnclickHandler = (e) => {
     e.preventDefault();
-    console.log(textInput.current.value); // eslint-disable-line
     const regex = new RegExp(textInput.current.value);
     const arr = array.map((obj, id) => {
-      console.log(id); // eslint-disable-line
-      console.log(obj); // eslint-disable-line
       if (regex.test(obj.name)) {
-        console.log('i m here'); // eslint-disable-line
         return (
           <BrowserRouter>
             <SearchResult key={obj.url} id={id + 1} pokemon={obj} />
@@ -28,9 +25,9 @@ const SearchForm = (Pokemon) => {
   };
 
   return (
-    <div className="App">
-      <input ref={textInput} type="text" />
-      <button type="button" onClick={onOnclickHandler}>Search Pokemon</button>
+    <div className={styles.app}>
+      <input ref={textInput} type="text" className={styles.input} />
+      <button type="button" onClick={onOnclickHandler} className={styles.button}>Search Pokemon</button>
       <div id="result" />
     </div>
   );

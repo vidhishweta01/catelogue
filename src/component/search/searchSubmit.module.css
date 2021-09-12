@@ -1,0 +1,25 @@
+.app {
+  margin-top: 30vh;
+}
+
+.input {
+  padding: 1vw;
+  width: 30vw;
+  font-size: large;
+  margin: 1vw;
+  border-color: transparent;
+  border-radius: 5px;
+  box-shadow: rgb(230, 227, 227) 4px 4px 4px;
+  background-color: rgb(250, 240, 223);
+}
+
+.button {
+  width: 10vw;
+  padding: 2vh;
+  font-size: medium;
+  font-weight: bolder;
+  border-color: transparent;
+  border-radius: 5px;
+  color: white;
+  background-color: turquoise;
+}
