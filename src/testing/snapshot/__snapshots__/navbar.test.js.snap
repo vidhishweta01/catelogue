@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component matches the snapshot 1`] = `
+<nav
+  className="navbar"
+>
+  <a
+    aria-current="page"
+    className="links active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Pokemon
+  </a>
+  <a
+    aria-current={null}
+    className="links"
+    href="/pokelist"
+    onClick={[Function]}
+  >
+    Pokemon list
+  </a>
+</nav>
+`;

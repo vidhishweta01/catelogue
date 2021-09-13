@@ -13,7 +13,7 @@ const SearchForm = (Pokemon) => {
     console.log(regex); // eslint-disable-line
     const arr = array.map((obj, id) => {
       if (regex.test(obj.name)) {
-        document.getElementById('error').style.display = 'none';
+        document.getElementById('all').style.display = 'none';
         return (
           <BrowserRouter>
             <SearchResult key={obj.url} id={id + 1} pokemon={obj} />
@@ -30,6 +30,9 @@ const SearchForm = (Pokemon) => {
     <div className={styles.app}>
       <input ref={textInput} type="text" className={styles.input} placeholder="POKEMON" />
       <button type="button" onClick={onOnclickHandler} className={styles.button}>Search Pokemon</button>
+      <div className={styles.pokemons} id="all">
+        {array.map((poke, id) => <SearchResult key={poke.url} id={id + 1} pokemon={poke} />)}
+      </div>
       <div id="result" />
     </div>
   );
