@@ -9,7 +9,7 @@ const SearchForm = (Pokemon) => {
   const { array } = Pokemon;
   const onOnclickHandler = (e) => {
     e.preventDefault();
-    const regex = new RegExp(`^${textInput.current.value}`);
+    const regex = new RegExp(`^${textInput.current.value.toLowerCase()}`);
     console.log(regex); // eslint-disable-line
     const arr = array.map((obj, id) => {
       if (regex.test(obj.name)) {
