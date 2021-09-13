@@ -11,7 +11,7 @@ const SearchResult = ({ pokemon, id }) => {
         <img className={styles.img} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`} alt={name} />
         <span className={styles.title}>{name}</span>
       </div>
-      <Link target="_blank" to={`/pokemon/${name}/${id}`} value={id} className={styles.link}>View</Link>
+      <Link to={`/pokemon/${name}/${id}`} value={id} className={styles.link}>View</Link>
     </div>
   );
 };
