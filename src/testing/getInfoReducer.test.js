@@ -4,14 +4,14 @@ const initialState = {
   data: {},
   loading: false,
   error: null,
-}
+};
 
 test('should return object with loading: true', () => {
   const res = getInfoReducer(initialState,
     {
       type: 'FetchPokeInfoLoading',
     });
-  
+
   expect(res).toEqual({ data: {}, loading: true, error: null });
 });
 
@@ -31,7 +31,7 @@ test('should return object with pokemon info data', () => {
       payload: { id: 0, name: 'bulbasaur' },
       pokemonName: 'bulbasaur',
     });
-  expect(res).toEqual({ data: { 'bulbasaur': { id: 0 , name: 'bulbasaur' } }, loading: false, error: null });
+  expect(res).toEqual({ data: { bulbasaur: { id: 0, name: 'bulbasaur' } }, loading: false, error: null });
 });
 
 test('should return default', () => {
@@ -40,4 +40,4 @@ test('should return default', () => {
       type: '',
     });
   expect(res).toEqual(initialState);
-})
+});

@@ -4,7 +4,7 @@ const initialState = {
   items: [],
   loading: false,
   error: '',
-}
+};
 
 test('should return object with loading:true', () => {
   const res = PokeReducer(initialState,
@@ -27,7 +27,7 @@ test('should return object with items have object', () => {
   const res = PokeReducer(initialState,
     {
       type: 'FetchPokeSuccess',
-      payload: {name: 'bulbasaur',url: '/bulbasaur/1' },
+      payload: { name: 'bulbasaur', url: '/bulbasaur/1' },
     });
   expect(res).toEqual({ items: { name: 'bulbasaur', url: '/bulbasaur/1' }, loading: false, error: '' });
 });
@@ -39,4 +39,3 @@ test('should return dafault', () => {
     });
   expect(res).toEqual(initialState);
 });
-

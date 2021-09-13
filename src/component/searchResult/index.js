@@ -1,4 +1,3 @@
-import SearchResult from './SearchResult';
+import SearchResult from './searchResult';
 
 export default SearchResult;
-
