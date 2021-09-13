@@ -10,12 +10,11 @@ const SearchForm = (Pokemon) => {
   const onOnclickHandler = (e) => {
     e.preventDefault();
     const regex = new RegExp(`^${textInput.current.value.toLowerCase()}`);
-    console.log(regex); // eslint-disable-line
     const arr = array.map((obj, id) => {
       if (regex.test(obj.name)) {
         document.getElementById('all').style.display = 'none';
         return (
-          <BrowserRouter>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
             <SearchResult key={obj.url} id={id + 1} pokemon={obj} />
           </BrowserRouter>
         );
