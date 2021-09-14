@@ -38,3 +38,40 @@ const SearchForm = (Pokemon) => {
 };
 
 export default SearchForm;
+// import React from 'react';
+// // import ReactDOM from 'react-dom';
+// // import { BrowserRouter } from 'react-router-dom';
+// import SearchResult from '../searchResult/searchResult';
+// import styles from './searchSubmit.module.css';
+
+// const SearchForm = (Pokemon) => {
+//   const textInput = React.createRef();
+//   const { array } = Pokemon;
+//   const onOnclickHandler = (e) => {
+//     e.preventDefault();
+//     const regex = new RegExp(`^${textInput.current.value.toLowerCase()}`);
+//     let i = 0;
+//     const arr = [];
+//     for (i = 0; i < array.length; i += 1) {
+//       if (regex.test(array[i].name)) {
+//         arr.push({ obj: array[i], id: i });
+//       }
+//     }
+//     return arr;
+//   };
+
+//   return (
+//     <div className={styles.app}>
+//       <input ref={textInput} type="text" className={styles.input} placeholder="POKEMON" />
+//       <button type="button" onClick={onOnclickHandler} className={styles.button}>
+// Search Pokemon
+// </button >
+//       <div className={styles.pokemons} id="all">
+//         {array.map((poke, id) => <SearchResult key={poke.url} id={id + 1} pokemon={poke} />)}
+//       </div>
+//       <div id="result" />
+//     </div>
+//   );
+// };
+
+// export default SearchForm;
