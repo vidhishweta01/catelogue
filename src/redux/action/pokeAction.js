@@ -40,4 +40,11 @@ const FetchPokeInfo = (id, name) => async (dispatch) => {
   }
 };
 
-export { FetchPokeData, FetchPokeInfo };
+const filterOnText = (value) => (
+  {
+    type: ActionTypes.FilterOnText,
+    value,
+  }
+);
+
+export { FetchPokeData, FetchPokeInfo, filterOnText };

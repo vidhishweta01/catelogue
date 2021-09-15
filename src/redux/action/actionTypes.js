@@ -5,6 +5,7 @@ const ActionTypes = {
   FetchPokeInfoLoading: 'FetchPokeInfoLoading',
   FetchPokeInfoSuccess: 'FetchPokeInfoSuccess',
   FetchPokeInfoFailure: 'FetchPokeInfoFailure',
+  FilterOnText: 'FilterOnText',
 };
 
 export default ActionTypes;

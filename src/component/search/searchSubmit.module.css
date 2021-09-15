@@ -25,11 +25,11 @@
   border-color: transparent;
   border-radius: 5px;
   color: white;
-  background-color: turquoise;
+  background-color: rgb(33, 129, 120);
 }
 
 .button:hover {
-  box-shadow: rgb(230, 227, 227) 4px 4px 4px;
+  box-shadow: rgb(210, 247, 238) 4px 4px 4px 4px;
 }
 
 .error {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './poke.module.css';
 
 const Poke = ({ pokemon, id }) => {
