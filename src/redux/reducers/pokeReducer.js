@@ -23,8 +23,6 @@ const PokeReducer = (state = InitialState, action) => {
         error: '',
       };
     case ActionTypes.FilterOnText:
-      console.log('success'); // eslint-disable-line
-      console.log(action.value); // eslint-disable-line
       return {
         ...state,
         filter: action.value,

@@ -16,23 +16,3 @@ const Search = () => {
 };
 
 export default Search;
-
-// const onOnclickHandler = (e) => {
-//   e.preventDefault();
-//   const regex = new RegExp(`^${textInput.current.value.toLowerCase()}`);
-//   const arr = array.map((obj, id) => {
-//     if (regex.test(obj.name)) {
-//       document.getElementById('all').style.display = 'none';
-//       return (
-//         <BrowserRouter>
-//           <Poke key={obj.url} id={id + 1} pokemon={obj} />
-//         </BrowserRouter>
-//       );
-//     }
-//     return true;
-//   });
-// };
-
-/* <div className={styles.pokemons} id="all">
-        {array.map((poke, id) => <Poke key={poke.url} id={id + 1} pokemon={poke} />)}
-      </div> */
