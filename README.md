@@ -12,7 +12,7 @@ catelogue app is a catelogue of pokemons with search by name or letter filter he
 - jsx
 
 ## Live link
- [BookStore App](https://cateloguecodeshweta.netlify.app/).
+ [catelogue App](https://vidhishweta01.github.io/catelogue/).
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps on the command line.
