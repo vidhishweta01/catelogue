@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchPokeData } from '../../redux/action/pokeAction';
-// import SearchForm from '../../component/search/searchSubmit';
 import Poke from '../../component/poke';
 
 const pokeList = () => {
