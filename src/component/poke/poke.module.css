@@ -1,0 +1,58 @@
+.Poke {
+  margin: 0;
+}
+
+.card {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 25px auto;
+  padding: 15px;
+  background-color: #fff;
+  align-items: center;
+  border: solid 1px #e8e8e8;
+  border-radius: 8px;
+  box-shadow: 4px 8px 6px #aaa;
+}
+
+.pokemon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: medium;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid turquoise;
+  background: transparent;
+  color: turquoise;
+  cursor: pointer;
+  font-size: medium;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background-color: turquoise;
+  color: #fff;
+  font-weight: bold;
+}
+
+.img:hover {
+  transition: 2s;
+  content: url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png');
+  max-width: 20vw;
+  max-height: 10vh;
+  padding-right: 2vw;
+}

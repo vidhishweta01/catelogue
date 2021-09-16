@@ -1,3 +1,3 @@
-import poke from './poke';
+import Poke from './poke';
 
-export default poke;
+export default Poke;

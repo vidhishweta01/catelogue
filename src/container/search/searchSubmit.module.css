@@ -1,0 +1,37 @@
+.app {
+  align-items: center;
+}
+
+.input {
+  padding: 1vw;
+  width: 30vw;
+  font-size: medium;
+  margin-right: 1vw;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: rgb(250, 240, 223);
+}
+
+.input:hover {
+  border-color: transparent;
+  box-shadow: rgb(156, 177, 182) 4px 4px 4px;
+}
+
+.button {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-weight: bolder;
+  border-color: transparent;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(33, 129, 120);
+}
+
+.button:hover {
+  box-shadow: rgb(210, 247, 238) 4px 4px 4px 4px;
+}
+
+.error {
+  display: none;
+  color: white;
+}
