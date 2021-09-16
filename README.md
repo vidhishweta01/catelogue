@@ -1,5 +1,5 @@
-# Catelogue
-catelogue app is a catelogue of pokemons with search by name or letter filter here two consecutive
+# catalogue
+catalogue app is a catelogue of pokemons with search by name or letter filter here two consecutive
  Api is fetch one is for link and other for specific pokemon info.
 
 ## Built With
