@@ -1,8 +1,8 @@
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import pokeList from '../pokelist';
-import PokeInfo from '../../component/pokeInfo';
-import Navbar from '../../component/Navbar';
+import pokeList from '../../container/pokelist';
+import PokeInfo from '../../container/pokeInfo';
+import Navbar from '../../container/Navbar';
 
 function App() {
   return (

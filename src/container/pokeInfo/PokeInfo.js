@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { FetchPokeInfo } from '../../redux/action/pokeAction';
-import Info from '../Info';
+import Info from '../../component/Info';
 import styles from './PokeInfo.module.css';
 
 const PokeInfo = () => {
