@@ -4,9 +4,9 @@ catalogue app is a catelogue of pokemons with search by name or letter filter he
 
 ![Screenshot](./src/screenshot/Screenshot1.png)
 
-![Screenshot](./screenshot/Screenshot2.png)
+![Screenshot](./src/screenshot/Screenshot2.png)
 
-![Screenshot](./screenshot/Screenshot1.png)
+![Screenshot](./src/screenshot/Screenshot1.png)
 
 ## Built With
 - JavaScript
