@@ -1,5 +1,5 @@
-# Catelogue
-catelogue app is a catelogue of pokemons with search by name or letter filter here two consecutive
+# catalogue
+catalogue app is a catelogue of pokemons with search by name or letter filter here two consecutive
  Api is fetch one is for link and other for specific pokemon info.
 
 ![Screenshot](./src/screenshots/Screenshot1.png)
@@ -25,11 +25,11 @@ To get a local copy up and running follow these simple example steps on the comm
 
 ## Clone the project from it's github repo.
 
-> ### $ git clone https://github.com/vidhishweta01/catelogue.git
+> ### $ git clone https://github.com/vidhishweta01/catalogue.git
   
 ## Change directory to the root of project
 
-> ### $ cd catelogue
+> ### $ cd catalogue
   
 ## Install all dev dependencies
 
