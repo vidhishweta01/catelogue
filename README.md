@@ -2,7 +2,7 @@
 catalogue app is a catelogue of pokemons with search by name or letter filter here two consecutive
  Api is fetch one is for link and other for specific pokemon info.
 
-![Screenshot](./src/screenshots/Screenshot1.png)
+![Screenshot](./src/screenshot/Screenshot1.png)
 
 ![Screenshot](./screenshots/Screenshot2.png)
 
